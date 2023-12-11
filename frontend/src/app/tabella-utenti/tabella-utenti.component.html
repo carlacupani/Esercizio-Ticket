@@ -1,28 +1,26 @@
-<div class="container">
 <h2>Tabella Utenti</h2>
-<table class="table">
+<table>
     <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Nome</th>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
             <th scope="col">Cognome</th>
             <th scope="col">Username</th>
             <th scope="col">Ruolo</th>
             <th scope="col">Azioni</th>
-      </tr>
+        </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let utente of utenti" >
-        <th scope="row">1</th>
-        <td>{{ utente.nome }}</td>
-        <td>{{ utente.cognome }}</td>
-        <td>{{ utente.username }}</td>
-        <td>{{ utente.ruolo }}</td>
-        <td class="actions">
-            <button class="action-button edit" (click)="navigaModifica(utente)">Modifica</button>
-            <button class="action-button delete" (click)="eliminaUtente(utente)">Elimina</button>
-        </td>
-      </tr>
+        <tr *ngFor="let utente of utenti">
+            <th scope="row">1</th>
+            <td>{{utenti.nome}}</td>
+            <td>{{utenti.cognome}}</td>
+            <td>{{utenti.username}}</td>
+            <td>{{utenti.ruolo}}</td>
+            <td class="actions">
+                <button class="action-button edit" onclick="modificaUtente(this)">Modifica</button>
+                <button class="action-button delete" onclick="eliminaUtente(this)">Elimina</button>
+            </td>
+        </tr>
     </tbody>
-  </table>
-</div>
+</table>
