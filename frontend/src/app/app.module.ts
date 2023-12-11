@@ -9,6 +9,7 @@ import { HomeUtenteComponent } from './home-utente/home-utente.component';
 import { TabellaUtentiComponent } from './tabella-utenti/tabella-utenti.component';
 import { TabellaTicketComponent } from './tabella-ticket/tabella-ticket.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FormModificaUtenteComponent } from './form-modifica-utente/form-modifica-utente.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     HomeUtenteComponent,
     TabellaUtentiComponent,
     TabellaTicketComponent,
-    NavbarComponent
+    NavbarComponent,
+    FormModificaUtenteComponent
   ],
   imports: [
     BrowserModule,
