@@ -28,12 +28,21 @@ public class ticketController {
 		this.ticketservice = ticketservice;
 	}
 	
-	@GetMapping("/admin/listaUtenti")
+	@GetMapping("/admin/utenti")
 	public String GetTuttiUtenti(Model model) 
 		model.addAttribute("utente", utenteservice.getTuttiUtenti());
 		return "listaUtenti";
 	}
 
+	@GetMapping("/admin/utenti/{id}")
+	Optional<Utenti> getUtenti(@PathVariable long id) {
+		return utentiservice.getUtenteSpecifico(id);
+	}
+
+	@PostMapping("/admin/aggiungi/utente")
+	void addUser(@RequestBody Utenti utente) {
+		utenteservice.save(utente);
+	}
 
 	@GetMapping("/admin/ticket")
 	public Iterable<Ticket> listaTicket() {
