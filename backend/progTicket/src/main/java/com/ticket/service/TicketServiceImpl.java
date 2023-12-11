@@ -44,4 +44,10 @@ public class TicketServiceImpl implements TicketService {
 		repositoryTicket.deleteById(id);
 	}
 
+	@Override
+	public Optional<Ticket> getTicket(long id) {
+		return repositoryTicket.findById(id);
+
+	}
+
 }

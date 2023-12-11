@@ -1,6 +1,7 @@
 package com.ticket.controller;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,22 +22,27 @@ public class ticketController {
 	private TicketService ticketservice;
 
 	@GetMapping("/admin/ticket")
-	public Iterable<Ticket> listaTicket(Model model) {
+	public Iterable<Ticket> listaTicket() {
 		return ticketservice.getTuttiTicket();
 	}
 
-	@PostMapping("/utenti/aggiungi")
+	@GetMapping("/admin/ticket/{id}")
+	Optional<Ticket> getTicket(@PathVariable long id) {
+		return ticketservice.getTicket(id);
+	}
+
+	@PostMapping("/ticket/aggiungi")
 	void addUser(@RequestBody Ticket ticket) {
 		ticketservice.save(ticket);
 	}
 
-	@PutMapping("/utenti/modifica/")
+	@PutMapping("/ticket/modifica/")
 	void updateTicket(@RequestBody Ticket ticket, @PathVariable Long id) {
 		ticketservice.updateTicket(ticket, id);
 	}
 
-	@DeleteMapping("/utenti/{id}")
-	void eliminaTIcket(@PathVariable long id) {
+	@DeleteMapping("/ticket/{id}")
+	void eliminaTicket(@PathVariable long id) {
 		ticketservice.deleteTicket(id);
 	}
 
