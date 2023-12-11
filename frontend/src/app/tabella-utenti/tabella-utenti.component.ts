@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./tabella-utenti.component.css']
 })
 export class TabellaUtentiComponent {
-
+  utenti: any;
 }

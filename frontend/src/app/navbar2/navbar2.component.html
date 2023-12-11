@@ -1,0 +1,14 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand">USER PAGE</a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" (click)="cambiatabella(1)">LE MIE INFORMAZIONI</a>
+                <a class="nav-link" (click)="cambiatabella(2)">I MIEI TICKET</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<app-tabella-utenti *ngIf="varnav == 1"></app-tabella-utenti>
+<app-tabella-ticket *ngIf="varnav == 2"></app-tabella-ticket>

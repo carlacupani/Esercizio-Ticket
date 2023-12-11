@@ -12,18 +12,17 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
+      <tr *ngFor="let utente of utenti" >
         <th scope="row">1</th>
-        <td>Carla</td>
-        <td>Cupani</td>
-        <td>Vante</td>
-        <td>Utente</td>
+        <td>{{ utente.nome }}</td>
+        <td>{{ utente.cognome }}</td>
+        <td>{{ utente.username }}</td>
+        <td>{{ utente.ruolo }}</td>
         <td class="actions">
-            <button class="action-button edit" onclick="modificaUtente(this)">Modifica</button>
-            <button class="action-button delete" onclick="eliminaUtente(this)">Elimina</button>
+            <button class="action-button edit" (click)="navigaModifica(utente)">Modifica</button>
+            <button class="action-button delete" (click)="eliminaUtente(utente)">Elimina</button>
         </td>
       </tr>
     </tbody>
   </table>
 </div>
-
