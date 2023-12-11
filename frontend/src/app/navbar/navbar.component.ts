@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-
+  varnav = 1;
+  cambiatabella(index:any){
+    this.varnav = index;
+    
+  }
 }

@@ -1,1 +1,24 @@
-<p>tabella-ticket works!</p>
+<h2>Tabella Ticket</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th>Username</th>
+            <th>Ruolo</th>
+            <th>Azioni</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Carla</td>
+            <td>Cupani</td>
+            <td>Vante</td>
+            <td>Utente</td>
+            <td class="actions">
+                <button class="action-button edit" onclick="modificaUtente(this)">Modifica</button>
+                <button class="action-button delete" onclick="eliminaUtente(this)">Elimina</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
