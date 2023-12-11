@@ -18,8 +18,22 @@ import com.ticket.service.TicketService;
 
 @Controller
 public class ticketController {
-
+	
+	private UtentiService utenteservice;
 	private TicketService ticketservice;
+
+	public ticketController(UtentiService utenteservice, TicketService ticketservice) {
+		super();
+		this.utenteservice = utenteservice;
+		this.ticketservice = ticketservice;
+	}
+	
+	@GetMapping("/admin/listaUtenti")
+	public String GetTuttiUtenti(Model model) 
+		model.addAttribute("utente", utenteservice.getTuttiUtenti());
+		return "listaUtenti";
+	}
+
 
 	@GetMapping("/admin/ticket")
 	public Iterable<Ticket> listaTicket() {
