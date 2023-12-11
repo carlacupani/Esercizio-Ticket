@@ -11,9 +11,9 @@
     </thead>
     <tbody>
         <tr *ngFor="let ticket of tickets">
-            <td> {{ticket.descrizione}}</td>
-            <td>{{ticket.id_utente}}</td>
-            <td>{{ticket.date}}</td>
+            <td>{{ ticket.descrizione }}</td>
+            <td>{{ ticket.id_utente }}</td>
+            <td>{{ ticket.date }}</td>
             <td>Utente</td>
             <td class="actions">
                 <button class="action-button edit" (click)="modificaTicket()">Modifica</button>
