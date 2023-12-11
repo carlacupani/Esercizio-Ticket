@@ -1,18 +1,19 @@
-<nav class="navbar navbar-expand-lg navbar">
-    <div class="collapse navbar-collapse my-2 my-lg-0">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" (click)="cambiatabella(1)">
-                  GESTISCI UTENTI
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" (click)="cambiatabella(2)">
-                 GESTISCI TICKET
-                </a>
-            </li>
-        </ul>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">ADMIN PAGE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">ciao</a>
+                <a class="nav-link" (click)="cambiatabella(1)">GESTISCI UTENTI</a>
+                <a class="nav-link" (click)="cambiatabella(2)">GESTISCI TICKET</a>
+            </div>
+        </div>
     </div>
 </nav>
+
 <app-tabella-utenti *ngIf="varnav == 1"></app-tabella-utenti>
 <app-tabella-ticket *ngIf="varnav == 2"></app-tabella-ticket>
