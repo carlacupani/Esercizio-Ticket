@@ -31,17 +31,17 @@ public class ticketController {
 		return ticketservice.getTicket(id);
 	}
 
-	@PostMapping("/utenti/aggiungi")
+	@PostMapping("/ticket/aggiungi")
 	void addUser(@RequestBody Ticket ticket) {
 		ticketservice.save(ticket);
 	}
 
-	@PutMapping("/utenti/modifica/")
+	@PutMapping("/ticket/modifica/")
 	void updateTicket(@RequestBody Ticket ticket, @PathVariable Long id) {
 		ticketservice.updateTicket(ticket, id);
 	}
 
-	@DeleteMapping("/utenti/{id}")
+	@DeleteMapping("/ticket/{id}")
 	void eliminaTicket(@PathVariable long id) {
 		ticketservice.deleteTicket(id);
 	}
