@@ -1,26 +1,29 @@
 <div class="container">
 <h2>Tabella Utenti</h2>
-<table>
+<table class="table">
     <thead>
-        <tr>
-            <th>Nome</th>
-            <th>Cognome</th>
-            <th>Username</th>
-            <th>Ruolo</th>
-            <th>Azioni</th>
-        </tr>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+            <th scope="col">Cognome</th>
+            <th scope="col">Username</th>
+            <th scope="col">Ruolo</th>
+            <th scope="col">Azioni</th>
+      </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>Carla</td>
-            <td>Cupani</td>
-            <td>Vante</td>
-            <td>Utente</td>
-            <td class="actions">
-                <button class="action-button edit" onclick="modificaUtente(this)">Modifica</button>
-                <button class="action-button delete" onclick="eliminaUtente(this)">Elimina</button>
-            </td>
-        </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>Carla</td>
+        <td>Cupani</td>
+        <td>Vante</td>
+        <td>Utente</td>
+        <td class="actions">
+            <button class="action-button edit" onclick="modificaUtente(this)">Modifica</button>
+            <button class="action-button delete" onclick="eliminaUtente(this)">Elimina</button>
+        </td>
+      </tr>
     </tbody>
-</table>
+  </table>
 </div>
+
