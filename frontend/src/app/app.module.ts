@@ -8,6 +8,7 @@ import { HomeAdminComponent } from './home-admin/home-admin.component';
 import { HomeUtenteComponent } from './home-utente/home-utente.component';
 import { TabellaUtentiComponent } from './tabella-utenti/tabella-utenti.component';
 import { TabellaTicketComponent } from './tabella-ticket/tabella-ticket.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { TabellaTicketComponent } from './tabella-ticket/tabella-ticket.componen
     HomeAdminComponent,
     HomeUtenteComponent,
     TabellaUtentiComponent,
-    TabellaTicketComponent
+    TabellaTicketComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
