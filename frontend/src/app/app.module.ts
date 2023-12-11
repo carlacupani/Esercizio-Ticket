@@ -10,6 +10,7 @@ import { TabellaUtentiComponent } from './tabella-utenti/tabella-utenti.componen
 import { TabellaTicketComponent } from './tabella-ticket/tabella-ticket.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FormModificaUtenteComponent } from './form-modifica-utente/form-modifica-utente.component';
+import { Navbar2Component } from './navbar2/navbar2.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FormModificaUtenteComponent } from './form-modifica-utente/form-modific
     TabellaUtentiComponent,
     TabellaTicketComponent,
     NavbarComponent,
-    FormModificaUtenteComponent
+    FormModificaUtenteComponent,
+    Navbar2Component
   ],
   imports: [
     BrowserModule,
