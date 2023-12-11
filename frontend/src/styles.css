@@ -6,3 +6,12 @@ html {
    height: 100%;
 }
 
+body {
+   min-height: 100%;
+   font-family: 'lato', sans-serif;
+   color: #fff;
+   background: #1e1b2a;
+   background: #1e1b2a;
+   background: -webkit-linear-gradient(to top, #1e1b2a , #bfadfb); /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to top, #1e1b2a , #bfadfb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

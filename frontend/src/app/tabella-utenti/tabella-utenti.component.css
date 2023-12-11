@@ -39,7 +39,15 @@ container {
 .action-button.delete {
     color: #d44747;
 }
+.action-button.delete:hover {
+    color: #fff;
+    background-color: #d44747;
+}
 
 .action-button.edit {
     color: #60ca6e;
+}
+.action-button.edit:hover {
+    color: #fff;
+    background-color: #60ca6e;
 }
