@@ -13,7 +13,7 @@ import com.ticket.repository.RepositoryTicket;
 @Service
 public interface TicketService {
 
-	Iterable<Ticket> getTuttiTicket();
+	List<Ticket> getTuttiTicket();
 
 	void save(Ticket ticket);
 
