@@ -12,7 +12,7 @@ public class TicketServiceImpl implements TicketService {
 	public RepositoryTicket repositoryTicket;
 
 	@Override
-	public Iterable<Ticket> getTuttiTicket() {
+	public List<Ticket> getTuttiTicket() {
 		return repositoryTicket.findAll();
 	}
 
